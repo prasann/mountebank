@@ -9,4 +9,8 @@ $(document).ready(function () {
             $(window).scrollTop(inputLocation.parent().offset().top);
         }
     }
+
+    $('.section-toggler').on('click', function (e) {
+        $(e.currentTarget).siblings("section").toggleClass('expanded');
+    });
 });
